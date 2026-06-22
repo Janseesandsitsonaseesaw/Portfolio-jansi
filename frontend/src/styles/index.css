@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #faf8f2;
+  --ink: #1a1a1a;
+  --graphite: #4a4a4a;
+  --rule: #c9c4b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* Subtle paper grain — layered noise via repeating gradients, no images needed */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.4) 2px, transparent 3px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.3) 2px, transparent 3px);
+  background-size: 3px 3px;
+}
+
+/* Faint vignette to mimic print edge darkening */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.045) 100%);
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-mono-label {
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Drop cap utility for article openings */
+.drop-cap::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 3.4em;
+  line-height: 0.78;
+  float: left;
+  padding-right: 0.08em;
+  padding-top: 0.02em;
+}
+
+/* Double-rule divider, classic broadsheet device */
+.rule-double {
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  height: 5px;
+}
+
+.rule-thin {
+  border-top: 1px solid var(--ink);
+}
+
+/* Halftone dot texture for illustration frames */
+.halftone-bg {
+  background-image: radial-gradient(rgba(0,0,0,0.55) 0.6px, transparent 0.6px);
+  background-size: 4px 4px;
+}
+
+/* Newspaper column rules between multi-col text blocks */
+.col-rule {
+  column-gap: 2.25rem;
+}
+.col-rule > * {
+  break-inside: avoid;
+}
+
+@media (min-width: 768px) {
+  .newspaper-cols-2 {
+    columns: 2;
+    column-gap: 2.25rem;
+  }
+  .newspaper-cols-3 {
+    columns: 3;
+    column-gap: 2rem;
+  }
+}
+
+img, svg {
+  filter: grayscale(100%) contrast(1.05);
+}
