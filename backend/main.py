@@ -124,7 +124,7 @@ def get_profile():
                 "id": "portfolio",
                 "name": "Personal Portfolio",
                 "stack": "React, JavaScript, CSS",
-                "summary": "A fully interactive retro desktop OS simulation with custom window management and a Dock, optimized for rendering performance.",
+                "summary": "A sleek, responsive portfolio website highlighting my projects, skills, and journey as a software developer.",
                 "github": "https://github.com/Janseesandsitsonaseesaw/Portfolio-jansi",
                 "live": None,
             },
