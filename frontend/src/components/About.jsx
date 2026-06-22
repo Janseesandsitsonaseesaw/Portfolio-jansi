@@ -18,7 +18,7 @@ export default function About() {
         <div className="text-[15px] leading-relaxed text-ink/90 max-w-2xl mx-auto text-center">
           <p>
             I'm a third-year B.Tech Information Technology student at Manipal Institute of
-            Technology, 20 years old, looking for opportunities to gain real-world experience in
+            Technology, looking for opportunities to gain real-world experience in
             the coding world. Outside of class, I'm usually still coding, or playing the ukulele
             and painting.
           </p>
