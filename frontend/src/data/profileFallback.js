@@ -7,7 +7,7 @@ export const profileFallback = {
   title: 'Software Engineer',
   email: 'jansidoshi4@gmail.com',
   phone: '+91 9811834641',
-  github: 'https://github.com/jansidoshi4',
+  github: 'https://github.com/Janseesandsitsonaseesaw',
   linkedin: 'https://linkedin.com/in/jansidoshi',
   education: [
     {
