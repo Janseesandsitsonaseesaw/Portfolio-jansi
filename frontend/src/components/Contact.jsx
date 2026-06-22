@@ -20,10 +20,14 @@ export default function Contact({ profile }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       })
-      if (!res.ok) throw new Error('Failed')
+      if (!res.ok) {
+        const errText = await res.text().catch(() => '')
+        throw new Error(`Failed to send message: ${res.status} ${res.statusText}. ${errText}`)
+      }
       setStatus('sent')
       setForm({ name: '', email: '', message: '' })
-    } catch {
+    } catch (err) {
+      console.error('Contact submission error:', err)
       setStatus('error')
     }
   }

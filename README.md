@@ -54,7 +54,7 @@ the site still works standalone.
 - **Project links:** `live` URLs in `backend/main.py` (`get_profile`) and
   `frontend/src/data/profileFallback.js` are placeholder `"#"` — drop in
   real deployed URLs when ready. GitHub links currently point to the
-  profile (`github.com/jansidoshi4`); update per-project if you have
+  profile (`github.com/Janseesandsitsonaseesaw`); update per-project if you have
   separate repo URLs.
 - **Resume:** `frontend/public/resume.pdf` already contains your uploaded
   resume — swap the file if you update it.
