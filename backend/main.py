@@ -55,7 +55,6 @@ def get_profile():
         "phone": "+91 9811834641",
         "github": "https://github.com/jansidoshi4",
         "linkedin": "https://linkedin.com/in/jansidoshi",
-        "resume_url": "/resume.pdf",
         "education": [
             {
                 "institution": "Manipal Institute of Technology",

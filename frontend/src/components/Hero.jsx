@@ -25,12 +25,6 @@ export default function Hero({ profile }) {
             >
               Read the Projects →
             </a>
-            <a
-              href={profile.resume_url}
-              className="font-mono-label text-xs border-2 border-ink px-5 py-3 hover:bg-ink hover:text-paper transition-colors"
-            >
-              Download Résumé ↓
-            </a>
           </div>
         </Reveal>
 

@@ -78,13 +78,6 @@ export default function Contact({ profile }) {
                 </dd>
               </div>
             </dl>
-
-            <a
-              href={profile.resume_url}
-              className="font-mono-label text-xs border-2 border-ink px-5 py-3 inline-block mt-6 hover:bg-ink hover:text-paper transition-colors"
-            >
-              Download Résumé ↓
-            </a>
           </div>
 
           <div className="hidden md:block border-l-2 border-ink h-full" />
