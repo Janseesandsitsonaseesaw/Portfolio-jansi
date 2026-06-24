@@ -82,7 +82,7 @@ export const profileFallback = {
       name: 'Personal Portfolio',
       stack: 'React, JavaScript, CSS',
       summary:
-        'A fully interactive retro desktop OS simulation with custom window management and a Dock, optimized for rendering performance.',
+        'A modern portfolio showcasing my projects, technical skills, and experience in software development, with a focus on building practical AI-powered and full-stack applications.',
       github: 'https://github.com/Janseesandsitsonaseesaw/Portfolio-jansi',
       live: null,
     },
