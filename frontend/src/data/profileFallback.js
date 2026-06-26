@@ -74,7 +74,7 @@ export const profileFallback = {
       stack: 'Python, MediaPipe, OpenCV, Spotipy, tkinter',
       summary:
         ' Built a real-time gesture-controlled Spotify client using MediaPipe HandLandmarker neural network to detect 21 handlandmarks at 30fps on macOS',
-      github: 'https://github.com/Janseesandsitsonaseesaw/Hotel-Manager',
+      github: 'https://github.com/Janseesandsitsonaseesaw/AirBeats',
       live: null,
     },
     {
