@@ -69,11 +69,11 @@ export const profileFallback = {
       live: null,
     },
     {
-      id: 'hotel-management',
-      name: 'Hotel Management System',
-      stack: 'Java, JavaFX, Maven',
+      id: 'air-beats',
+      name: 'AirBeats',
+      stack: 'Python, MediaPipe, OpenCV, Spotipy, tkinter',
       summary:
-        'A concurrent desktop booking system supporting simultaneous bookings and GST-based billing, with real-time revenue analytics and role-based access control.',
+        ' Built a real-time gesture-controlled Spotify client using MediaPipe HandLandmarker neural network to detect 21 handlandmarks at 30fps on macOS',
       github: 'https://github.com/Janseesandsitsonaseesaw/Hotel-Manager',
       live: null,
     },
