@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import { useProfile } from './hooks/useProfile'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   const { profile } = useProfile()
@@ -23,6 +24,7 @@ export default function App() {
         <Education education={profile.education} />
         <Contact profile={profile} />
       </main>
+      <Analytics />
     </div>
   )
 }
